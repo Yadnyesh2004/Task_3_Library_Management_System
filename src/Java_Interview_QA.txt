@@ -1,0 +1,46 @@
+Java Interview Questions and Answers (Set 2)
+
+1. What is abstraction?
+Abstraction is the process of hiding implementation details and showing only the essential features of an object. 
+In Java, abstraction is achieved using abstract classes and interfaces. It helps reduce complexity and increase reusability.
+
+2. Difference between interface and abstract class?
+- Abstract Class: Can have both abstract and non-abstract methods, constructors, and instance variables. Supports single inheritance.
+- Interface: Contains only abstract methods (till Java 7), default/static methods (from Java 8), and private methods (from Java 9). Supports multiple inheritance.
+
+3. Explain polymorphism with example.
+Polymorphism means "many forms". In Java, it allows one action to behave differently based on the object. 
+Example: Method Overloading (compile-time polymorphism) and Method Overriding (runtime polymorphism). 
+Ex: class Animal { void sound(){} } class Dog extends Animal { void sound(){System.out.println("Bark");} }
+
+4. What is method overriding?
+Method overriding occurs when a subclass provides its own implementation of a method already defined in the parent class. 
+The method must have the same name, parameters, and return type. It allows runtime polymorphism.
+
+5. Explain “IS-A” vs “HAS-A” relationships.
+- IS-A: Represents inheritance. Example: Dog IS-A Animal.
+- HAS-A: Represents composition. Example: Car HAS-A Engine.
+
+6. Why use inheritance?
+Inheritance promotes code reusability by allowing a class to use methods and fields of another class. 
+It also supports polymorphism and hierarchical classification.
+
+7. What is dynamic binding?
+Dynamic binding (late binding) means the method to be called is determined at runtime, not at compile-time. 
+It occurs with method overriding when a superclass reference points to a subclass object.
+
+8. What is constructor chaining?
+Constructor chaining is the process of calling one constructor from another within the same class (using this()) 
+or from the parent class (using super()). It helps reuse code and avoid duplication.
+
+9. How to implement encapsulation?
+Encapsulation is implemented by:
+- Declaring variables of a class as private.
+- Providing public getter and setter methods to access and update the private variables. 
+This ensures data hiding and better control.
+
+10. Explain super keyword.
+The super keyword in Java is used to:
+- Refer to the immediate parent class object.
+- Call the parent class constructor.
+- Access parent class methods and variables when they are overridden in the child class.
